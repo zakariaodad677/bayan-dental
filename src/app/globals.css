@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-arabic: 'Tajawal', sans-serif;
+  --font-english: 'Plus Jakarta Sans', sans-serif;
+  --font-serif-luxury: 'Cormorant Garamond', serif;
+
+  --color-bayan-blue: #082846;
+  --color-bayan-blue-light: #0B3A66;
+  --color-bayan-sand: #F4F0EA;
+  --color-bayan-sand-light: #FAF9F7;
+  --color-bayan-accent: #C2A278;
+  --color-bayan-accent-light: #D4B995;
+  --color-bayan-text-main: #1A1A1A;
+  --color-bayan-text-muted: #666666;
+}
+
+@layer base {
+  :root {
+    --bayan-blue: #082846;
+    --bayan-blue-light: #0B3A66;
+    --bayan-sand: #F4F0EA;
+    --bayan-sand-light: #FAF9F7;
+    --bayan-accent: #C2A278;
+    --bayan-accent-light: #D4B995;
+    --bayan-text-main: #1A1A1A;
+    --bayan-text-muted: #666666;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--bayan-sand);
+    color: var(--bayan-text-main);
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
